@@ -15,7 +15,7 @@ Documentation baseline: **5 November 2026**. Use the release notes for your inst
 
 Working reference integrations are available for both frameworks:
 
-- **Astro:** [source repository](https://github.com/ludulicious/marpos-studio-astro-reference).
+- **Astro:** [reference app](https://ludulicious.github.io/marpos-studio-astro-reference/) and [source repository](https://github.com/ludulicious/marpos-studio-astro-reference).
 - **Nuxt Content:** [reference app](https://ludulicious.github.io/marpos-studio-nuxt-reference/) and [source repository](https://github.com/ludulicious/marpos-studio-nuxt-reference).
 
 You and your AI assistant can inspect the repositories and run them locally using their README instructions. Both include setup and acceptance steps. They demonstrate integration patterns rather than a required website design.
