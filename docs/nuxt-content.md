@@ -107,6 +107,21 @@ Registered MDC blocks support scalar properties, a default Markdown slot, and na
 
 For pages with several editorial sections, [block tabs](authoring.md#page-specific-block-tabs) can expose named MDC slots and related structured fields as separate editing tabs. The document structure and Vue component still control the actual website layout.
 
+## Working reference
+
+Explore the [Nuxt Content reference app](https://ludulicious.github.io/marpos-studio-nuxt-reference/) and inspect [marpos-studio-nuxt-reference](https://github.com/ludulicious/marpos-studio-nuxt-reference). It adapts the Astro reference to Nuxt 4 and Nuxt Content 3, with native MDC components.
+
+Useful files to inspect:
+
+- [`content.config.ts`](https://github.com/ludulicious/marpos-studio-nuxt-reference/blob/main/content.config.ts): explicit local collection schemas and reference editor metadata.
+- [`content/`](https://github.com/ludulicious/marpos-studio-nuxt-reference/tree/main/content): records, folder configuration, media libraries, and examples of page-specific block tabs.
+- [`app/pages/`](https://github.com/ludulicious/marpos-studio-nuxt-reference/tree/main/app/pages) and [`useReferenceContent.ts`](https://github.com/ludulicious/marpos-studio-nuxt-reference/blob/main/app/composables/useReferenceContent.ts): rendering routes, queries, and relationship resolution.
+- [`studio.preview.json`](https://github.com/ludulicious/marpos-studio-nuxt-reference/blob/main/studio.preview.json): content-to-route mappings.
+- [`studio.components.json`](https://github.com/ludulicious/marpos-studio-nuxt-reference/blob/main/studio.components.json) and [`app/components/content/`](https://github.com/ludulicious/marpos-studio-nuxt-reference/tree/main/app/components/content): Callout and StorySections editing definitions paired with Vue renderers and named MDC slots.
+- [`studio.images.json`](https://github.com/ludulicious/marpos-studio-nuxt-reference/blob/main/studio.images.json) and [`ProseImg.vue`](https://github.com/ludulicious/marpos-studio-nuxt-reference/blob/main/app/components/prose/ProseImg.vue): image format choices and their responsive rendering.
+
+Follow the reference README for local setup, static generation, checks, and deployment. Its hosted app uses a GitHub Pages subpath; Studio preview mappings stay relative to the website root. Reuse the patterns while preserving your website's design, routes, content identities, and installed dependency APIs.
+
 ## Validate and hand over
 
 Supported field rules produce editing and publishing feedback. Incomplete content may be saved as a draft; invalid changed content blocks publication. Do not assume every Nuxt runtime refinement or build-time behavior is reproduced by the editor; run the website's normal checks and production build too.

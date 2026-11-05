@@ -7,6 +7,8 @@ Public installers, signed updates, and developer documentation for Marpos Studio
 - [Astro integration guide](docs/astro.md)
 - [Nuxt Content integration guide](docs/nuxt-content.md)
 - [AI prompts for adapting an existing website](docs/ai-prompts.md)
+- [Nuxt Content reference app](https://ludulicious.github.io/marpos-studio-nuxt-reference/) and [source repository](https://github.com/ludulicious/marpos-studio-nuxt-reference)
+- [Astro reference repository](https://github.com/ludulicious/marpos-studio-astro-reference)
 
 You do not need access to Marpos Studio's source code to integrate your website. Keep content, schemas, rendering components, and optional Studio configuration in your own website repository.
 

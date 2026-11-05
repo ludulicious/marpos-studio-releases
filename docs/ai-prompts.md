@@ -4,6 +4,8 @@
 
 Open your **website repository** in your AI coding assistant, then copy the appropriate prompt below. Studio source access is unnecessary. Replace bracketed context with your website's details where known; the assistant should inspect the repository for the rest.
 
+Reference implementations: [Astro source](https://github.com/ludulicious/marpos-studio-astro-reference) and [Nuxt Content source](https://github.com/ludulicious/marpos-studio-nuxt-reference) ([reference app](https://ludulicious.github.io/marpos-studio-nuxt-reference/)). Each framework prompt below tells the assistant what to inspect.
+
 These prompts request website changes, checks, and a handover report. They do not authorize publishing or deployment. If the assistant cannot access a linked document, give it that document's text or a local copy of this public documentation before it invents configuration.
 
 ## Astro: adapt an existing website
@@ -94,6 +96,21 @@ https://github.com/ludulicious/marpos-studio-releases/blob/main/docs/nuxt-conten
 https://github.com/ludulicious/marpos-studio-releases/blob/main/docs/authoring.md
 https://github.com/ludulicious/marpos-studio-releases/blob/main/docs/verification.md
 
+Inspect this working Nuxt Content reference repository, including its README:
+https://github.com/ludulicious/marpos-studio-nuxt-reference
+Explore the rendered reference app:
+https://ludulicious.github.io/marpos-studio-nuxt-reference/
+Look at content.config.ts, content/ and its .navigation.yml files,
+studio.preview.json, studio.components.json, studio.images.json,
+app/pages/, app/composables/useReferenceContent.ts,
+app/components/content/Callout.vue, app/components/content/StorySections.vue,
+and app/components/prose/ProseImg.vue. Trace the schemas and editor metadata
+through saved content to actual rendering, including named MDC slots, block tabs,
+reference resolution, media, and image sizes. Clone/run the reference separately
+using its README if the hosted app cannot be accessed. Treat it as integration
+patterns, not a required design or a reason to upgrade this site's dependencies.
+Keep deployment base paths separate from Studio's website-root preview mappings.
+
 Inspect installed Nuxt/Nuxt Content versions, collection configuration, source
 patterns, schemas/editor APIs, content components, queries/routes, i18n, media,
 package manager/workspaces, and deployment. The documented contract targets
@@ -140,7 +157,7 @@ creation, preview destinations, components, media, and publication behavior.
 Report changed files, checks actually run/results, remaining limitations, and
 Studio interactions still needing manual verification from the public checklist.
 If you cannot operate Studio, state that instead of claiming those checks passed.
-Do not commit, push, publish, or deploy.
+Do not commit, push, publish, deploy, or edit the reference repository.
 ```
 
 ## Review the authoring experience

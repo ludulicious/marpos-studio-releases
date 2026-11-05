@@ -4,6 +4,8 @@
 
 All paths below are relative to the **selected website application**, including in a monorepo. These additions are optional: first make the native collections and website rendering work.
 
+For complete examples, inspect the [Nuxt Content reference](https://github.com/ludulicious/marpos-studio-nuxt-reference) ([reference app](https://ludulicious.github.io/marpos-studio-nuxt-reference/)) or the [Astro reference](https://github.com/ludulicious/marpos-studio-astro-reference). The Nuxt reference pairs MDC manifests with Vue renderers, named slots and block tabs, and image-format settings with `ProseImg.vue`.
+
 ## Configuration map
 
 | File/location | Purpose | Website responsibility |
